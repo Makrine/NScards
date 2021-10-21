@@ -78,7 +78,7 @@ $(document).ready(function(){
 
     $("#nation").on("input", function(){
         nation = document.getElementById("nation").value
-        //console.log(nation)
+        document.getElementById("nationExists").innerHTML = "";
         validButton.disabled = false;
     });
 });
