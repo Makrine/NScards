@@ -18,6 +18,7 @@
 var table = document.createElement("TABLE");
 var UserAgent = "toolAuthor:tmakrine@gmail.com";
 var nation;
+var nationInput;
 var requestTimes = new Array();
 var requestsNum = 0;
 var nationCards = new Array();
@@ -72,6 +73,8 @@ $(document).ready(function(){
     contButton = document.getElementById("cont");
     pauseButton = document.getElementById("pause");
     validButton = document.getElementById("validate");
+    
+    nationInput = document.getElementById("nation");
 
     $("#nation").on("input", function(){
         nation = document.getElementById("nation").value
@@ -289,7 +292,7 @@ function getNationCardsMarketData() {
     pauseButton.disabled = false;
     contButton.disabled = true;
 
-    nation.disabled = true;
+    nationInput.disabled = true;
 
     var timeNow = new Date().getTime();
     for(var i = 0; i < 40; i++) {
@@ -329,7 +332,7 @@ function pause() {
     startButton.disabled = true;
     pauseButton.disabled = true;
     contButton.disabled = false;
-    nation.disabled = false;
+    nationInput.disabled = false;
 
     nationCardsPaused = nationCards;
     nationCards = [];
@@ -340,7 +343,7 @@ function cont() {
     pauseButton.disabled = false;
     contButton.disabled = true;
 
-    nation.disabled = true;
+    nationInput.disabled = true;
 
     var timeNow = new Date().getTime();
     for(var i = 0; i < 40; i++) {
