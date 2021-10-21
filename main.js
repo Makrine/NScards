@@ -87,7 +87,6 @@ $(document).ready(function(){
 function validate() {
 
     validButton.disabled = true;
-    startButton.disabled = false;
     pauseButton.disabled = true;
     contButton.disabled = true;
 
@@ -110,6 +109,7 @@ function validate() {
     try {
         nation = nation.replace(/ /g, '_');
         if(nationExists()) {
+            startButton.disabled = false;
             console.log("Validatation: OK");
             document.getElementById("nationExists").innerHTML = "Validated Successfully!"
         }
