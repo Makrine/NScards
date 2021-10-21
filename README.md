@@ -1,4 +1,7 @@
 # [NS Cards](https://makrine.github.io/NScards)
+
+if you use the tool, please drop a telegram to [Mackiland](https://www.nationstates.net/nation=mackiland)! Thanks!
+
 NS Cards is a tool to see whether there are any bids on your cards that are over Market Value or Junk Price.
 
 Bids over MV will be shown RED and those over Junk Price will be BLUE.
