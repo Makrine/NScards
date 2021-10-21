@@ -37,10 +37,13 @@
             </div>
 
         </div>
-        
+      
         <div class="btnsProc">
+            <p id="info">The tool shows ONLY the bids that are over MV or junk price<br>Bids over MV will be <c style="color:red">RED</c>
+                <br>
+                Bids over junk price will be <c style="color:blue">BLUE</c>
+            </p>
             <p id="processed"></p>
-            <!-- <button onclick="getNationCards()">get Cards</button> -->
             <button id="getData" onclick="getNationCardsMarketData()" disabled>Start</button>
             <button id="pause" onclick="pause()" disabled>Pause</button>
             <button id="cont" onclick="cont()" disabled>Continue</button>
