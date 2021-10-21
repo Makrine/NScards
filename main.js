@@ -320,6 +320,7 @@ function makeMarketRequest() {
             if(processedCardsNumber == uniqueNationCardsNumber - 1) {
                 document.getElementById("processed").innerHTML = `DONE!`;
                 pauseButton.disabled = true;
+                nationInput.disabled = false;
             }
         } else clearTimeout(t);
         }, delay);
