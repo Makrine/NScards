@@ -7,4 +7,4 @@ The process might be slow but that is because of [rate-limiting](https://www.nat
 
 # License
 
-NS Cards is licensed under the Apache License 2.0.
+NS Cards is licensed under the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0)
