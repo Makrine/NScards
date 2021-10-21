@@ -299,7 +299,9 @@ function getNationCardsMarketData() {
     makeMarketRequest();
 }
 
-
+// I borrowed some code enclosed with ///// from Wolfram and Hart (https://www.nationstates.net/nation=wolfram_and_hart).
+//See his work here: https://forum.nationstates.net/viewtopic.php?f=12&t=423382&start=48
+///////
 function makeMarketRequest() {
     var delay;
     var timeNow = new Date().getTime();
@@ -320,6 +322,7 @@ function makeMarketRequest() {
         }, delay);
     if(cardData.length) createTable();
 }
+///////////
 
 function pause() {
 
