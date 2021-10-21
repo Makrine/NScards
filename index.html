@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>NS cards</title>
+        <link rel="shortcut icon" href="assets/cards.ico" type="image/x-icon" />
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta charset="utf-8">
+        <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+
+    <body>
+
+        <div class="header">
+            <div class="headerColumn" id="left">
+                <p>If you use the tool,<br>Please, drop a telegram<br>to <a href="https://nationstates.net/nation=mackiland">Mackiland</a></p>
+            </div>
+
+            <div class="headerColumn" id="title">
+                <h1>NationStates Cards</h1>
+                <div class="nationInput">
+                    <label for="name">Input your nation name</label>
+                    <br>
+                    <input type="text" id="nation" name="name" required size="10"><br>
+                    <button id="validate" onclick="validate()" disabled>Validate</button>
+                    <p id="nationExists"></p>
+
+                </div>
+            </div> 
+
+            <div class="headerColumn" id="right">
+                <p></p>
+            </div>
+
+        </div>
+
+
+        <!-- <label for="name">Input your nation name</label>
+        <br>
+        <input type="text" id="nation" name="name" required size="10"><br>
+        <button id="validate" onclick="validate()" disabled>Validate</button>
+        <p id="nationExists"></p> -->
+        <div class="btnsProc">
+            <p id="processed"></p>
+            <!-- <button onclick="getNationCards()">get Cards</button> -->
+            <button id="getData" onclick="getNationCardsMarketData()" disabled>Start</button>
+            <button id="pause" onclick="pause()" disabled>Pause</button>
+            <button id="cont" onclick="cont()" disabled>Continue</button>
+        </div>
+        <br>
+        <div id="myTable"></div>
+
+
+    </body>
+
+</html>
